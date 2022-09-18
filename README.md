@@ -86,6 +86,10 @@ Note:
 - in case
 
 
-## Issues
-- gatsby blog build not able to link wikilink images. but normal image markdown ref working
-- mkdocs mastersite able to link both types 
+## Limitations
+- wikilink (mkdoc better)
+  - gatsby not able to link wikilink images. but normal image markdown ref working  (for md file wikilink ref working fine)
+  - mkdocs able to link both types 
+- source dir (gatsby better)
+  - gatsby can take both md and imgage from anywhere in repo (outside of base dir and even if md, image in separate dir)
+  - while mkdocs can take source directory outside of base dir tree, but if attachments (referred from md files) are outside of base dir tree then it will not work. Hence for note, entire content directory taken as source and exclude the blog/etc folders not needed in mkdocs build. However this has a side effect of notebook folder is shown in first level instead of its content (so a redirect is conifigured in netlify.toml to redirect from root in published site) 
