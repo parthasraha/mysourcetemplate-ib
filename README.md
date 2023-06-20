@@ -1,6 +1,6 @@
-# infobase
+# infobase template
 
-My Notes and Writeups
+this is the source template customized in struct and with the sample data with files images
 
 ## Installation Steps
 
